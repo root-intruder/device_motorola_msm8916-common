@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
