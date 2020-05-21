@@ -115,9 +115,6 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
-
 # UI
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
